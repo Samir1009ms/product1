@@ -552,7 +552,7 @@ body {
 }
 @media (max-width: 767px) {
   .row--container {
-    width: 90% !important;
+    width: 95% !important;
   }
 }
 @media (max-width: 1023px) {
