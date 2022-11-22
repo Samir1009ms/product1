@@ -522,8 +522,9 @@ body {
                 .xett {
 
                     @include mobile {
-                        width: 100%;
-                        height: 1px;
+                        display: block;
+                        width: 100% !important;
+                        height: 1px !important;
                     }
 
                     @include tablet {
@@ -573,6 +574,9 @@ body {
                         align-items: center;
                         gap: 10px;
 
+                            @include mobile {
+                                margin-top: 25px;
+                            }
 
                         input {
                             border: none;
@@ -600,12 +604,15 @@ body {
 .row {
     width: 100%;
 
+        @include mobile {
+            padding-top: 20px;
+        }
     &--container {
         width: 80%;
         margin: 0 auto;
 
         @include mobile {
-            width: 90%;
+            width: 90% !important;
         }
 
         @include tablet {

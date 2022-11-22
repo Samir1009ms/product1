@@ -473,8 +473,9 @@ body {
 }
 @media (max-width: 767px) {
   .floating--container .floating--right .right--container .xett {
-    width: 100%;
-    height: 1px;
+    display: block;
+    width: 100% !important;
+    height: 1px !important;
   }
 }
 @media (max-width: 1023px) {
@@ -516,6 +517,11 @@ body {
   align-items: center;
   gap: 10px;
 }
+@media (max-width: 767px) {
+  .floating--container .floating--right .right--container .right--button .button--right {
+    margin-top: 25px;
+  }
+}
 .floating--container .floating--right .right--container .right--button .button--right input {
   border: none;
   background-color: #00cfff;
@@ -535,13 +541,18 @@ body {
 .row {
   width: 100%;
 }
+@media (max-width: 767px) {
+  .row {
+    padding-top: 20px;
+  }
+}
 .row--container {
   width: 80%;
   margin: 0 auto;
 }
 @media (max-width: 767px) {
   .row--container {
-    width: 90%;
+    width: 90% !important;
   }
 }
 @media (max-width: 1023px) {
