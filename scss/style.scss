@@ -574,9 +574,9 @@ body {
                         align-items: center;
                         gap: 10px;
 
-                            @include mobile {
-                                margin-top: 25px;
-                            }
+                        @include mobile {
+                            margin-top: 25px;
+                        }
 
                         input {
                             border: none;
@@ -604,9 +604,10 @@ body {
 .row {
     width: 100%;
 
-        @include mobile {
-            padding-top: 20px;
-        }
+    @include mobile {
+        padding-top: 20px;
+    }
+
     &--container {
         width: 80%;
         margin: 0 auto;
@@ -646,6 +647,11 @@ body {
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
+
+                @include mobile {
+                    font-size: 14px;
+                    gap: 10px;
+                }
 
                 .row-text {
                     color: rgba(115, 115, 115, 1);
@@ -1063,7 +1069,7 @@ hr {
                 @include mobile {
                     font-size: 21px;
                     margin: 6px 0px 6px 0px;
-                    
+
                 }
             }
         }

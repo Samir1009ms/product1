@@ -590,6 +590,12 @@ body {
   width: 100%;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  .row--container .row--top .top--box {
+    font-size: 14px;
+    gap: 10px;
+  }
+}
 .row--container .row--top .top--box .row-text {
   color: rgb(115, 115, 115);
   font-weight: 600;
